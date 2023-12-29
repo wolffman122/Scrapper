@@ -1,5 +1,6 @@
 import requests as r
 import bs4
+import mysql.connector
 
 
 
@@ -13,6 +14,13 @@ base_response = r.get(base_url, headers=headers )
 
 cookies = base_response.cookies
 
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="scrapper",
+    password='Scrapper#1322'
+)
+
+print(mydb)
 
 TestDic = {'WD': ['B07B1HX5KN', 'B07D3N95GS', 'B084F34HZ6', 'B07RTMPWD8', 'B0CD2XBZWR', 'B08K3VVKSW', 'B08K3TFM92', 'B09TBF6GHJ', 'B0B5W1CQ8W'],
            'SG': ['B0B94R72J5', 'B0B94MX35D', 'B0B94M13NH', 'B0B94NQCV5', 'B0B94KSFTH', 'B0B94P481H', 'B0B94PNF7P', 'B0B94MRX2H', 'B0B94MF4LP', 'B0B94NBBJH']

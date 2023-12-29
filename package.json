@@ -1,0 +1,25 @@
+{
+  "name": "scrapper",
+  "version": "1.0.0",
+  "description": "Amazon Scraping website",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolffman122/scrapper.git"
+  },
+  "author": "Jon Wolff",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolffman122/scrapper/issues"
+  },
+  "homepage": "https://github.com/wolffman122/scrapper#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
